@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from '../assets/images/avatar.png';
+import toggleSideBar from '../utils/toggleSideBar';
 
 const SideBar = () => {
   const urls = [
@@ -25,19 +26,25 @@ const SideBar = () => {
     { icon: 'fa-solid fa-certificate', title: 'Certification' },
     { icon: 'fa-solid fa-diagram-project', title: 'Projects' },
   ];
+  const close = () => toggleSideBar();
   return (
-    <div className="sidebar">
+    <div id="sidebar" className="sidebar">
+      <div className="close">
+        <button onClick={close}>
+          <i className="fa-solid fa-xmark"></i>
+        </button>
+      </div>
       <div className="avatar">
         <img src={avatar} alt="avatar" />
       </div>
       <div className="connect">
-        {urls.map((item) => (
-          <i class={item.icon}></i>
+        {urls.map((item, idx) => (
+          <i key={idx} className={item.icon}></i>
         ))}
       </div>
       <div className="options">
-        {menus.map((item) => (
-          <div>
+        {menus.map((item, idx) => (
+          <div key={idx}>
             <span>
               <i className={item.icon}></i>
             </span>

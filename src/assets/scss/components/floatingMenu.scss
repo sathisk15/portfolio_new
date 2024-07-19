@@ -1,0 +1,32 @@
+.floatingMenu {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    background-color: $secondary;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    &:hover {
+      border: 2px solid $secondary;
+      color: $secondary;
+      background-color: white;
+    }
+  }
+}
+
+// Mobile View
+@media (width >= 576px) {
+  .floatingMenu {
+    display: none;
+  }
+}
