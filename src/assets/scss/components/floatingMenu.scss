@@ -11,15 +11,15 @@
     justify-content: center;
     outline: none;
     background-color: $secondary;
-    color: white;
-    border: 2px solid white;
+    color: $primary;
+    border: 2px solid $primary;
     padding: 15px;
     border-radius: 50%;
     transition: all 0.3s ease;
     &:hover {
       border: 2px solid $secondary;
       color: $secondary;
-      background-color: white;
+      background-color: $primary;
     }
   }
 }

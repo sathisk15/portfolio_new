@@ -1,12 +1,12 @@
 import SideBar from './components/SideBar';
-import Home from './components/Home';
 import FloatingMenu from './components/FloatingMenu';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <SideBar />
-      <Home />
+      <Outlet />
       <FloatingMenu />
     </div>
   );

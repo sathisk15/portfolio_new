@@ -1,8 +1,8 @@
 .sidebar {
   width: 350px;
-  height: 100%;
-  background-color: #000000;
-  color: #ffffff;
+  height: 100vh;
+  background-color: $dark;
+  color: $primary;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +19,8 @@
       justify-content: center;
       outline: none;
       border: none;
-      color: white;
-      background-color: black;
+      color: $primary;
+      background-color: $dark;
       padding: 15px;
       transition: all 0.3s ease;
       &:hover {
@@ -66,11 +66,11 @@
       margin: 0.4rem 0;
       cursor: pointer;
       padding: 0.1rem;
-      border: 1px solid #000;
+      border: 1px solid $dark;
       transition: all 0.5s ease;
       &:hover {
-        border: 1px solid #4361ee;
-        color: #4361ee;
+        border: 1px solid $secondary;
+        color: $secondary;
       }
       i {
         width: 3rem;

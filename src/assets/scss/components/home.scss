@@ -34,11 +34,11 @@
         color: $secondary;
         background-color: $secondary;
         border-radius: 40px;
-        color: white;
+        color: $primary;
         transition: all 0.3s ease;
         &:hover {
           color: $secondary;
-          background-color: white;
+          background-color: $primary;
         }
       }
     }
