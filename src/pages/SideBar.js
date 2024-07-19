@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../assets/images/avatar.png';
 import toggleSideBar from '../utils/toggleSideBar';
+import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
   const urls = [
@@ -18,13 +19,13 @@ const SideBar = () => {
     },
   ];
   const menus = [
-    { icon: 'fa-solid fa-house', title: 'Home' },
-    { icon: 'fa-solid fa-circle-info', title: 'About' },
-    { icon: 'fa-solid fa-gears', title: 'Skills' },
-    { icon: 'fa-solid fa-history', title: 'Experience' },
-    { icon: 'fa-solid fa-graduation-cap', title: 'Education' },
-    { icon: 'fa-solid fa-certificate', title: 'Certification' },
-    { icon: 'fa-solid fa-diagram-project', title: 'Projects' },
+    { icon: 'fa-solid fa-house', title: 'Home', path: '/' },
+    { icon: 'fa-solid fa-circle-info', title: 'About', path: '/about' },
+    { icon: 'fa-solid fa-gears', title: 'Skills', path: '/skills' },
+    { icon: 'fa-solid fa-history', title: 'Experience', path: '' },
+    { icon: 'fa-solid fa-graduation-cap', title: 'Education', path: '' },
+    { icon: 'fa-solid fa-certificate', title: 'Certification', path: '' },
+    { icon: 'fa-solid fa-diagram-project', title: 'Projects', path: '' },
   ];
   const close = () => toggleSideBar();
   return (
@@ -44,12 +45,16 @@ const SideBar = () => {
       </div>
       <div className="options">
         {menus.map((item, idx) => (
-          <div key={idx}>
-            <span>
-              <i className={item.icon}></i>
-            </span>
-            <p>{item.title}</p>
-          </div>
+          <NavLink to={item.path}>
+            {({ isActive }) => (
+              <div key={idx} onClick={close} className={isActive && 'active'}>
+                <span>
+                  <i className={item.icon}></i>
+                </span>
+                <p>{item.title}</p>
+              </div>
+            )}
+          </NavLink>
         ))}
       </div>
       <p className="copyright">Copyright © {new Date().getFullYear()}</p>

@@ -60,6 +60,14 @@
     font-size: 1.3rem;
     margin-bottom: 1rem;
     padding: 1rem 0;
+    a {
+      text-decoration: none;
+      color: $primary;
+      .active {
+        border: 1px solid $secondary;
+        color: $secondary;
+      }
+    }
     div {
       display: flex;
       align-items: center;
@@ -72,6 +80,7 @@
         border: 1px solid $secondary;
         color: $secondary;
       }
+      
       i {
         width: 3rem;
         display: flex;

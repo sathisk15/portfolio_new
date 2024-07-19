@@ -16,6 +16,12 @@ $dark: #000000;
   display: flex;
 }
 
-@import './components/sidebar.scss';
-@import './components/home.scss';
-@import './components/floatingMenu.scss';
+.wrapper {
+  width: 100%;
+  margin: 1rem;
+}
+
+@import './pages/sidebar.scss';
+@import './pages/home.scss';
+@import './pages/floatingMenu.scss';
+@import './pages/about.scss';
