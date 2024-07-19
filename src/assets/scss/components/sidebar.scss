@@ -1,5 +1,5 @@
 .sidebar {
-  width: 300px;
+  width: 350px;
   height: 100%;
   background-color: #000000;
   color: #ffffff;
@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
   .avatar {
     margin-bottom: 2rem;
     img {
@@ -62,5 +63,14 @@
         margin: 0;
       }
     }
+  }
+}
+
+// Mobile View
+@media (width <= 576px) {
+  .sidebar {
+    position: absolute;
+    left: -100%;
+    top: 0;
   }
 }
