@@ -45,9 +45,13 @@ const SideBar = () => {
       </div>
       <div className="options">
         {menus.map((item, idx) => (
-          <NavLink to={item.path}>
+          <NavLink to={item.path} key={idx}>
             {({ isActive }) => (
-              <div key={idx} onClick={close} className={isActive && 'active'}>
+              <div
+                key={idx}
+                onClick={close}
+                className={isActive ? 'active' : ''}
+              >
                 <span>
                   <i className={item.icon}></i>
                 </span>
