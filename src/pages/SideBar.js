@@ -26,8 +26,8 @@ const SideBar = () => {
     { icon: 'fa-solid fa-graduation-cap', title: 'Education', path: '/edu' },
     {
       icon: 'fa-solid fa-certificate',
-      title: 'Certification',
-      path: '/certifications',
+      title: 'Achievements',
+      path: '/achievements',
     },
     {
       icon: 'fa-solid fa-diagram-project',

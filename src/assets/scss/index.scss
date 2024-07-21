@@ -8,7 +8,7 @@ $dark: #000000;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: "Tinos", serif;
+  font-family: 'Tinos', serif;
 }
 
 .App {
@@ -23,3 +23,4 @@ $dark: #000000;
 @import './pages/floatingMenu.scss';
 @import './pages/about.scss';
 @import './pages/skills.scss';
+@import './pages/achievements.scss';

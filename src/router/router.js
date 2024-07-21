@@ -3,6 +3,7 @@ import App from '../App';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
+import Achievements from '../pages/Achievements';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
       { path: 'skills', element: <Skills /> },
       { path: 'edu', element: <div>edu</div> },
       { path: 'exp', element: <div>exp</div> },
-      { path: 'certifications', element: <div>certifications</div> },
+      { path: 'achievements', element: <Achievements /> },
       { path: 'projects', element: <div>projects</div> },
     ],
   },

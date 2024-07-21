@@ -6,5 +6,13 @@
 
 h1.heading {
   border-bottom: 3px solid $secondary;
-  display: inline-block;
+}
+.heading {
+  display: flex;
+  justify-content: start;
+  h1 {
+    border-bottom: 2px solid $secondary;
+    margin-left: 0.7rem;
+    font-weight: bold;
+  }
 }
