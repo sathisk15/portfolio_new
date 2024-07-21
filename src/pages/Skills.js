@@ -30,30 +30,34 @@ const Skills = () => {
     <Wrapper>
       <div className="skills">
         <h1 className="heading">Skills</h1>
-        <div className="sections row">
-          <div className="expert col-sm-12 col-md-4">
+        <div className="sections ">
+          <div className="expert">
             <h4>Expert</h4>
-            {expertSkills.map((skill, idx) => (
-              <Skill
-                key={idx}
-                icon={skill.icon}
-                name={skill.name}
-                percent={skill.percent}
-              />
-            ))}
+            <div className="row">
+              {expertSkills.map((skill, idx) => (
+                <Skill
+                  key={idx}
+                  icon={skill.icon}
+                  name={skill.name}
+                  percent={skill.percent}
+                />
+              ))}
+            </div>
           </div>
-          <div className=" Intermediate col-sm-12 col-md-4">
+          <div className=" Intermediate">
             <h4>Intermediate</h4>
-            {intermediateSkills.map((skill, idx) => (
-              <Skill
-                key={idx}
-                icon={skill.icon}
-                name={skill.name}
-                percent={skill.percent}
-              />
-            ))}
+            <div className="row">
+              {intermediateSkills.map((skill, idx) => (
+                <Skill
+                  key={idx}
+                  icon={skill.icon}
+                  name={skill.name}
+                  percent={skill.percent}
+                />
+              ))}
+            </div>
           </div>
-          <div className="oftSkills col-sm-12 col-md-4">
+          <div className="oftSkills">
             <h4>Soft Skills</h4>
           </div>
         </div>

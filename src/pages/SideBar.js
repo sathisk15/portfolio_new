@@ -22,10 +22,18 @@ const SideBar = () => {
     { icon: 'fa-solid fa-house', title: 'Home', path: '/' },
     { icon: 'fa-solid fa-circle-info', title: 'About', path: '/about' },
     { icon: 'fa-solid fa-gears', title: 'Skills', path: '/skills' },
-    { icon: 'fa-solid fa-history', title: 'Experience', path: '' },
-    { icon: 'fa-solid fa-graduation-cap', title: 'Education', path: '' },
-    { icon: 'fa-solid fa-certificate', title: 'Certification', path: '' },
-    { icon: 'fa-solid fa-diagram-project', title: 'Projects', path: '' },
+    { icon: 'fa-solid fa-history', title: 'Experience', path: '/exp' },
+    { icon: 'fa-solid fa-graduation-cap', title: 'Education', path: '/edu' },
+    {
+      icon: 'fa-solid fa-certificate',
+      title: 'Certification',
+      path: '/certifications',
+    },
+    {
+      icon: 'fa-solid fa-diagram-project',
+      title: 'Projects',
+      path: '/projects',
+    },
   ];
   const close = () => toggleSideBar();
   return (
