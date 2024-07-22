@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
 import Achievements from '../pages/Achievements';
+import Projects from '../pages/Projects';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       { path: 'edu', element: <div>edu</div> },
       { path: 'exp', element: <div>exp</div> },
       { path: 'achievements', element: <Achievements /> },
-      { path: 'projects', element: <div>projects</div> },
+      { path: 'projects', element: <Projects /> },
     ],
   },
 ]);

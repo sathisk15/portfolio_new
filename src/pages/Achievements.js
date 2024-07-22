@@ -76,7 +76,11 @@ const Certifications = () => {
   const [popup, setPopup] = useState({ show: false, image: '' });
   return (
     <>
-      <Wrapper style={{ overflowY: 'scroll', marginRight: '0px' }}>
+      <Wrapper
+        style={{
+          overflowY: 'scroll',
+        }}
+      >
         <div className="achievements">
           <div className="heading w-100">
             <h1>Achievements</h1>

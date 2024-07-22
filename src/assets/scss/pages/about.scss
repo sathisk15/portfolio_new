@@ -1,2 +1,18 @@
 .about {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  .aboutBody {
+    padding: 1rem;
+    .para {
+      display: flex;
+      i {
+        padding: 0.4rem 1rem;
+        margin-right: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
