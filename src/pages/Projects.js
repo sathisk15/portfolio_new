@@ -18,7 +18,7 @@ const Projects = () => {
     {
       name: 'Portfolio',
       image: newPortfolio,
-      //   url: 'https://movieapp-9e173.web.app/',
+      url: 'https://myportfolio-sk.web.app/',
       github: 'https://github.com/sathisk15/portfolio_new',
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       name: 'Portfolio',
       image: portfolio,
-      url: 'https://myportfolio-sk.web.app/',
+      url: 'https://portfolio-sk-6d980.web.app/',
       github: 'https://github.com/sathisk15/eCommerce',
     },
     {
@@ -52,7 +52,7 @@ const Projects = () => {
         overflowY: 'auto',
       }}
     >
-      <div className="projects">
+      <div className="projects mb-5">
         <div className="heading w-100">
           <h1>Projects</h1>
         </div>

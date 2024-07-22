@@ -50,7 +50,7 @@ const Skills = () => {
     'Knowledge sharing',
   ];
   return (
-    <Wrapper>
+    <Wrapper style={{ overflowY: 'auto' }}>
       <div className="skills">
         <h1 className="heading">Skills</h1>
         <div className="sections ">

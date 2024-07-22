@@ -26,7 +26,7 @@ const Education = () => {
           <div className="experience col-12 col-md-8">
             <h4>Experience</h4>
             <h2>React Developer</h2>
-            <h5>Tata Consultancy Service</h5>
+            <h5>Tata Consultancy Services</h5>
             <h6>2019-Present</h6>
             <h4>Summary</h4>
             <div className="jobSummary">
