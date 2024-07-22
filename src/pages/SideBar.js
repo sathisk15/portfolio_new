@@ -2,22 +2,9 @@ import React from 'react';
 import avatar from '../assets/images/avatar.png';
 import toggleSideBar from '../utils/toggleSideBar';
 import { NavLink } from 'react-router-dom';
+import SocialIcons from '../components/SocialIcons';
 
 const SideBar = () => {
-  const urls = [
-    {
-      icon: 'fa-brands fa-linkedin',
-      url: 'https://www.linkedin.com/in/rsathisk15/',
-    },
-    {
-      icon: 'fa-brands fa-github',
-      url: 'https://github.com/sathisk15',
-    },
-    {
-      icon: 'fa-brands fa-hackerrank',
-      url: 'https://www.hackerrank.com/profile/rsathisk15',
-    },
-  ];
   const menus = [
     { icon: 'fa-solid fa-house', title: 'Home', path: '/' },
     { icon: 'fa-solid fa-circle-info', title: 'About', path: '/about' },
@@ -46,11 +33,7 @@ const SideBar = () => {
       <div className="avatar">
         <img src={avatar} alt="avatar" />
       </div>
-      <div className="connect">
-        {urls.map((item, idx) => (
-          <i key={idx} className={item.icon}></i>
-        ))}
-      </div>
+      <SocialIcons />
       <div className="options">
         {menus.map((item, idx) => (
           <NavLink to={item.path} key={idx}>

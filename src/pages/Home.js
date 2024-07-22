@@ -2,6 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import avatar from '../assets/images/hero.png';
 import Wrapper from '../components/Wrapper';
+import SocialIcons from '../components/SocialIcons';
 
 const Home = () => {
   const skills = {
@@ -59,6 +60,9 @@ const Home = () => {
               style={skills.style}
               repeat={Infinity}
             />
+          </div>
+          <div className="homeConnect mb-1">
+            <SocialIcons />
           </div>
           <div className="buttons">
             <button className="connect">Let's Connect</button>

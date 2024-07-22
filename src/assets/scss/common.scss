@@ -16,3 +16,30 @@ h1.heading {
     font-weight: bold;
   }
 }
+
+#connect {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  i {
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+  .fa-linkedin {
+    color: #0a66c2;
+  }
+  .fa-hackerrank {
+    color: #2ec866;
+  }
+}
