@@ -44,7 +44,7 @@ const Home = () => {
     },
   };
   return (
-    <Wrapper>
+    <Wrapper style={{ marginRight: '0px', marginTop: '0px' }}>
       <div className="home row">
         <div className="col-sm-12 col-md-6">
           <div className="intro">

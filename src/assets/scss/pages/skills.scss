@@ -7,7 +7,6 @@
       padding: 0.5rem 1rem 0.5rem 0;
       .icon {
         width: 18%;
-
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -24,6 +23,24 @@
       .progress-bar {
         transition: width 0.1s linear;
       }
+    }
+    .softSkills {
+      .row {
+        .softSkill {
+          display: flex;
+          i {
+            margin: 0 0.5rem;
+            margin-top: 0.3rem;
+            color: $secondary;
+          }
+        }
+      }
+    }
+    .lineBreak {
+      height: 1px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0.5rem 0;
     }
   }
 }

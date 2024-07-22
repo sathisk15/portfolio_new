@@ -19,7 +19,7 @@ const Projects = () => {
       name: 'Portfolio',
       image: newPortfolio,
       //   url: 'https://movieapp-9e173.web.app/',
-      //   github: 'https://github.com/sathisk15/MovieApp',
+      github: 'https://github.com/sathisk15/portfolio_new',
     },
     {
       name: 'Dev Connector',

@@ -1,6 +1,9 @@
 .projectsBody {
   height: auto;
   width: 100%;
+  .row{
+    justify-content: center;
+  }
   .row div {
     padding: 0;
   }

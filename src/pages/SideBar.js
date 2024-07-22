@@ -8,9 +8,12 @@ const SideBar = () => {
   const menus = [
     { icon: 'fa-solid fa-house', title: 'Home', path: '/' },
     { icon: 'fa-solid fa-circle-info', title: 'About', path: '/about' },
+    {
+      icon: 'fa-solid fa-file-certificate',
+      title: 'Qualifications',
+      path: '/qualifications',
+    },
     { icon: 'fa-solid fa-gears', title: 'Skills', path: '/skills' },
-    { icon: 'fa-solid fa-history', title: 'Experience', path: '/exp' },
-    { icon: 'fa-solid fa-graduation-cap', title: 'Education', path: '/edu' },
     {
       icon: 'fa-solid fa-certificate',
       title: 'Achievements',
@@ -33,6 +36,7 @@ const SideBar = () => {
       <div className="avatar">
         <img src={avatar} alt="avatar" />
       </div>
+      <h3>Sathiskumar</h3>
       <SocialIcons />
       <div className="options">
         {menus.map((item, idx) => (

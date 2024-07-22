@@ -18,7 +18,6 @@ h1.heading {
 }
 
 #connect {
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -42,4 +41,8 @@ h1.heading {
   .fa-hackerrank {
     color: #2ec866;
   }
+}
+
+h4{
+  font-weight: bold;
 }

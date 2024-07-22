@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 
 const About = () => {
   let paragraph = [
-    `I am a React Developer at TCS with 5 years of experience. <b>I have
+    `I am a <b>React Developer</b> at TCS with 5 years of experience. <b>I have
             worked with international banks and insurance companies</b>, focusing on
             creating risk management applications for banks and insurance
             applications in an Agile environment. These applications are used
@@ -44,8 +44,8 @@ const About = () => {
         <div className="aboutBody">
           {paragraph.map((para) => (
             <div className="para">
-              <i class="fa-solid fa-check"></i>
-              {parse(`<p>&emsp;&emsp;&emsp;${para}</p>`)}
+              <i class="fa-solid fa-bullseye"></i>
+              {parse(`<p>${para}</p>`)}
             </div>
           ))}
         </div>

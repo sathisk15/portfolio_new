@@ -1,0 +1,12 @@
+.qualification div {
+  overflow-y: auto;
+  i {
+    color: $secondary;
+  }
+}
+.qualification{
+  .experience{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Skill = ({ icon, name, percent, idx }) => {
-  const [percentage, setPercentage] = useState(Math.round(percent / 2));
+  const [percentage, setPercentage] = useState(50);
 
   setTimeout(() => {
     if (percentage < percent) setPercentage(percentage + 1);
@@ -14,7 +14,7 @@ const Skill = ({ icon, name, percent, idx }) => {
         <div className="description">
           <div className="w-100 d-flex justify-content-between mb-1">
             <span>{name}</span>
-            <span>{percentage}%</span>
+            <span>{percentage/10}/10</span>
           </div>
           <div className="progress w-100">
             <div

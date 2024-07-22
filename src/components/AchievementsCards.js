@@ -4,7 +4,7 @@ const AchievementsCards = (props) => {
   const { className, heading, achievements, setPopup } = props;
   return (
     <div className={`${className} row`}>
-      <h3>{heading}</h3>
+      <h4>{heading}</h4>
       {achievements.map((achievement) => (
         <div className="col-md-3 col-sm-6">
           <div
