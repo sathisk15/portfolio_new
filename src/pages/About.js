@@ -42,9 +42,9 @@ const About = () => {
           <h1>About</h1>
         </div>
         <div className="aboutBody">
-          {paragraph.map((para) => (
-            <div className="para">
-              <i class="fa-solid fa-bullseye"></i>
+          {paragraph.map((para, idx) => (
+            <div className="para" key={idx}>
+              <i className="fa-solid fa-bullseye"></i>
               {parse(`<p>${para}</p>`)}
             </div>
           ))}

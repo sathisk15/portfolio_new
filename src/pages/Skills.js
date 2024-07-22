@@ -32,7 +32,7 @@ const Skills = () => {
     { icon: rtl, name: 'Testing Library React', percent: 80 },
     { icon: bootstrap, name: 'Bootstrap', percent: 90 },
   ];
-  
+
   const intermediateSkills = [
     { icon: node, name: 'Node Js', percent: 70 },
     { icon: expressjs, name: 'Express Js', percent: 60 },
@@ -86,9 +86,9 @@ const Skills = () => {
             <h4>Soft Skills</h4>
             <div className="row mt-3">
               {softSkills.map((softSkill, idx) => (
-                <div className="col-12 col-md-3">
+                <div className="col-12 col-md-3" key={idx}>
                   <div className="softSkill">
-                    <i class="fa-solid fa-bullseye"></i>
+                    <i className="fa-solid fa-bullseye"></i>
                     <p>{softSkill}</p>
                   </div>
                 </div>

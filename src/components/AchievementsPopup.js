@@ -9,7 +9,7 @@ const AchievementsPopup = ({ popup, setPopup }) => {
           <div className="header">
             <i
               onClick={() => setPopup({ show: false })}
-              class="fa-solid fa-x"
+              className="fa-solid fa-x"
             ></i>
           </div>
           <div className="body">

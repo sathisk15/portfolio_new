@@ -5,8 +5,8 @@ const AchievementsCards = (props) => {
   return (
     <div className={`${className} row`}>
       <h4>{heading}</h4>
-      {achievements.map((achievement) => (
-        <div className="col-md-3 col-sm-6">
+      {achievements.map((achievement, idx) => (
+        <div className="col-md-3 col-sm-6" key={idx}>
           <div
             className="certficate"
             style={{
@@ -23,7 +23,7 @@ const AchievementsCards = (props) => {
                       window.open(achievement.url, '_blank', 'noopener')
                     }
                   >
-                    <i class="fa-solid fa-link"></i>
+                    <i className="fa-solid fa-link"></i>
                   </div>
                 )}
                 <div
@@ -32,7 +32,7 @@ const AchievementsCards = (props) => {
                     setPopup({ show: true, image: achievement.image })
                   }
                 >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </div>
               </div>
             </div>

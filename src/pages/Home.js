@@ -65,7 +65,18 @@ const Home = () => {
             <SocialIcons />
           </div>
           <div className="buttons">
-            <button className="connect">Let's Connect</button>
+            <button
+              className="connect"
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/rsathisk15/',
+                  '_blank',
+                  'noopener'
+                )
+              }
+            >
+              Let's Connect
+            </button>
           </div>
         </div>
 

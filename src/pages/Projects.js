@@ -58,8 +58,8 @@ const Projects = () => {
         </div>
         <div className="projectsBody">
           <div className={`row`}>
-            {projects.map((project) => (
-              <div className="col-md-3 col-sm-6">
+            {projects.map((project, idx) => (
+              <div className="col-md-3 col-sm-6" key={idx}>
                 <div
                   className="project"
                   style={{
@@ -77,7 +77,7 @@ const Projects = () => {
                             window.open(project.github, '_blank', 'noopener')
                           }
                         >
-                          <i class="fa-solid fa-code"></i>
+                          <i className="fa-solid fa-code"></i>
                         </div>
                       )}
                       {project.url && (
@@ -87,7 +87,7 @@ const Projects = () => {
                             window.open(project.url, '_blank', 'noopener')
                           }
                         >
-                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                          <i className="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                       )}
                     </div>

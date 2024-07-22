@@ -30,9 +30,9 @@ const Education = () => {
             <h6>2019-Present</h6>
             <h4>Summary</h4>
             <div className="jobSummary">
-              {jobSummary.map((summary) => (
-                <div className="summary d-flex">
-                  <i class="fa-solid fa-bullseye pe-3 mx-3 mt-2"></i>
+              {jobSummary.map((summary, idx) => (
+                <div className="summary d-flex" key={idx}>
+                  <i className="fa-solid fa-bullseye pe-3 mx-3 mt-2"></i>
                   {parse(`<p>${summary}</p>`)}
                 </div>
               ))}
@@ -43,7 +43,7 @@ const Education = () => {
             <h4>Education</h4>
             <div className="education">
               <div className="icon">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <i className="fa-solid fa-graduation-cap"></i>
                 <div className="line"></div>
               </div>
               <div className="course">
@@ -54,7 +54,7 @@ const Education = () => {
             </div>
             <div className="education">
               <div className="icon">
-                <i class="fa-solid fa-school"></i>
+                <i className="fa-solid fa-school"></i>
                 <div className="line"></div>
               </div>
               <div className="course">
@@ -65,7 +65,7 @@ const Education = () => {
             </div>
             <div className="education">
               <div className="icon">
-                <i class="fa-solid fa-school"></i>
+                <i className="fa-solid fa-school"></i>
                 <div className="line"></div>
               </div>
               <div className="course">

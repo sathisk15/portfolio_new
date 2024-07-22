@@ -51,6 +51,7 @@
       .active {
         border: 1px solid $secondary;
         color: $secondary;
+        border-radius: 5px;
       }
     }
     div {
@@ -64,6 +65,7 @@
       &:hover {
         border: 1px solid $secondary;
         color: $secondary;
+        border-radius: 5px;
       }
 
       i {
