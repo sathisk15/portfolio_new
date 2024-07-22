@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AchievementsCards = (props) => {
-  const { className, heading, achievements } = props;
+  const { className, heading, achievements, setPopup } = props;
   return (
     <div className={`${className} row`}>
       <h3>{heading}</h3>
@@ -14,7 +14,28 @@ const AchievementsCards = (props) => {
               ...achievement.style,
             }}
           >
-            <div className="certOverlay"></div>
+            <div className="certOverlay">
+              <div className="btns">
+                {achievement.url && (
+                  <div
+                    className="urlButton"
+                    onClick={() =>
+                      window.open(achievement.url, '_blank', 'noopener')
+                    }
+                  >
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                )}
+                <div
+                  className="viewButton"
+                  onClick={() =>
+                    setPopup({ show: true, image: achievement.image })
+                  }
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ))}

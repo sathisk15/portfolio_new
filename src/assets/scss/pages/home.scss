@@ -27,6 +27,7 @@
       transform: scale(1.1) translateX(100px);
     }
     .buttons {
+      overflow: visible;
       button {
         border: 2px solid $secondary;
         outline: none;
@@ -39,6 +40,9 @@
         &:hover {
           color: $secondary;
           background-color: $primary;
+        }
+        &:active {
+          transform: translateY(1px);
         }
       }
     }

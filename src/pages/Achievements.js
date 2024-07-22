@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Wrapper from '../components/Wrapper';
 // Certificates Image
 import webDevBootcamp from '../assets/images/achievements/certificates/webDevBootcamp.jpg';
@@ -13,6 +13,7 @@ import frescoPlay from '../assets/images/achievements/awards/FrescoPlay.JPG';
 import serviceAndCommitment from '../assets/images/achievements/awards/ServiceAndCommitment.jpg';
 
 import AchievementsCards from '../components/AchievementsCards';
+import AchievementsPopup from '../components/AchievementsPopup';
 
 const Certifications = () => {
   const certificates = [
@@ -59,41 +60,44 @@ const Certifications = () => {
     {
       image: serviceAndCommitment,
       name: 'Service and Commitment Award',
-      url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-5ca4b15a-733b-440a-907f-842fbfd4cde5.jpg',
       style: { backgroundPosition: 'center' },
     },
     {
       image: frescoPlay,
       name: 'Fresco Play Award',
-      url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-5ca4b15a-733b-440a-907f-842fbfd4cde5.jpg',
       style: { backgroundPosition: 'center' },
     },
     {
       image: learningAchievement,
       name: 'Learning Achivement Award',
-      url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-5ca4b15a-733b-440a-907f-842fbfd4cde5.jpg',
       style: { backgroundPosition: 'center' },
     },
   ];
+  const [popup, setPopup] = useState({ show: false, image: '' });
   return (
-    <Wrapper style={{ overflowY: 'scroll', marginRight: '0px' }}>
-      <div className="achievements">
-        <div className="heading w-100">
-          <h1>Achievements</h1>
+    <>
+      <Wrapper style={{ overflowY: 'scroll', marginRight: '0px' }}>
+        <div className="achievements">
+          <div className="heading w-100">
+            <h1>Achievements</h1>
+          </div>
+          <AchievementsCards
+            className="certs"
+            heading="Certifications"
+            achievements={certificates}
+            setPopup={setPopup}
+          />
+          <div className="lineBreak"></div>
+          <AchievementsCards
+            className="awards"
+            heading="Awards"
+            achievements={awards}
+            setPopup={setPopup}
+          />
         </div>
-        <AchievementsCards
-          className="certs"
-          heading="Certifications"
-          achievements={certificates}
-        />
-        <div className="lineBreak"></div>
-        <AchievementsCards
-          className="awards"
-          heading="Awards"
-          achievements={awards}
-        />
-      </div>
-    </Wrapper>
+      </Wrapper>
+      {popup.show && <AchievementsPopup popup={popup} setPopup={setPopup} />}
+    </>
   );
 };
 
