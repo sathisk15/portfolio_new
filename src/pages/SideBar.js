@@ -36,7 +36,7 @@ const SideBar = () => {
       <div className="avatar">
         <img src={avatar} alt="avatar" />
       </div>
-      <h3>Sathiskumar</h3>
+      <h3 className="name">Sathiskumar</h3>
       <SocialIcons />
       <div className="options">
         {menus.map((item, idx) => (

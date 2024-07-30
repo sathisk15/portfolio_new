@@ -5,7 +5,7 @@ import About from '../pages/About';
 import Skills from '../pages/Skills';
 import Achievements from '../pages/Achievements';
 import Projects from '../pages/Projects';
-import Qualification from '../components/Qualification';
+import Qualification from '../pages/Qualification';
 
 const router = createBrowserRouter([
   {

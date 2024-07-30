@@ -19,12 +19,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-weight: 500;
       }
       .progress-bar {
         transition: width 0.1s linear;
       }
     }
     .softSkills {
+      font-weight: 500;
       .row {
         .softSkill {
           display: flex;

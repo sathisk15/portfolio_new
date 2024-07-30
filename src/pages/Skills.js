@@ -17,12 +17,15 @@ import cicd from '../assets/images/skills/cicd.png';
 import bootstrap from '../assets/images/skills/bootstrap.png';
 import sass from '../assets/images/skills/sass.png';
 import mongodb from '../assets/images/skills/mongodb.png';
+import ts from '../assets/images/skills/ts.png';
+import nextjs from '../assets/images/skills/nextjs.png';
 
 const Skills = () => {
   const expertSkills = [
     { icon: reactIcon, name: 'React', percent: 80 },
     { icon: redux, name: 'Redux', percent: 80 },
-    { icon: js, name: 'Javascript', percent: 80 },
+    { icon: js, name: 'JavaScript', percent: 80 },
+    { icon: ts, name: 'TypeScript', percent: 70 },
     { icon: html, name: 'HTML / JSX', percent: 90 },
     { icon: css, name: 'CSS', percent: 90 },
     { icon: sass, name: 'SASS', percent: 90 },
@@ -34,6 +37,7 @@ const Skills = () => {
   ];
 
   const intermediateSkills = [
+    { icon: nextjs, name: 'Next Js', percent: 70 },
     { icon: node, name: 'Node Js', percent: 70 },
     { icon: expressjs, name: 'Express Js', percent: 60 },
     { icon: mongodb, name: 'MongoDB', percent: 60 },
@@ -52,7 +56,9 @@ const Skills = () => {
   return (
     <Wrapper style={{ overflowY: 'auto' }}>
       <div className="skills">
-        <h1 className="heading">Skills</h1>
+        <div className="heading w-100">
+          <h1>Skills</h1>
+        </div>
         <div className="sections ">
           <div className="expert">
             <h4>Expert</h4>
