@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/images/avatar.png';
+import avatar from '../assets/images/avatar.avif';
 import toggleSideBar from '../utils/toggleSideBar';
 import { NavLink } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';

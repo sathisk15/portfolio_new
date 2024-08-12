@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import avatar from '../assets/images/hero.png';
+import avatar from '../assets/images/hero.avif';
 import Wrapper from '../components/Wrapper';
 import SocialIcons from '../components/SocialIcons';
 

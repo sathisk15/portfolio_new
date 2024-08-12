@@ -17,7 +17,7 @@ import cicd from '../assets/images/skills/cicd.png';
 import bootstrap from '../assets/images/skills/bootstrap.png';
 import sass from '../assets/images/skills/sass.png';
 import mongodb from '../assets/images/skills/mongodb.png';
-import ts from '../assets/images/skills/ts.png';
+import ts from '../assets/images/skills/ts.webp';
 import nextjs from '../assets/images/skills/nextjs.png';
 
 const Skills = () => {
