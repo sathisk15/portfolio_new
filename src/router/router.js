@@ -1,23 +1,75 @@
 import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Skills from '../pages/Skills';
-import Achievements from '../pages/Achievements';
-import Projects from '../pages/Projects';
-import Qualification from '../pages/Qualification';
+import { lazy, Suspense } from 'react';
+const Loader = lazy(() => import('../components/Loader'));
+const App = lazy(() => import('../App'));
+const Home = lazy(() => import('../pages/Home'));
+const About = lazy(() => import('../pages/About'));
+const Skills = lazy(() => import('../pages/Skills'));
+const Achievements = lazy(() => import('../pages/Achievements'));
+const Projects = lazy(() => import('../pages/Projects'));
+const Qualification = lazy(() => import('../pages/Qualification'));
+
+const Wrapper = ({ children }) => (
+  <Suspense fallback={<Loader />}>{children}</Suspense>
+);
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <Wrapper>
+        <App />
+      </Wrapper>
+    ),
     children: [
-      { index: true, element: <Home /> },
-      { path: 'about', element: <About /> },
-      { path: 'skills', element: <Skills /> },
-      { path: 'qualifications', element: <Qualification /> },
-      { path: 'achievements', element: <Achievements /> },
-      { path: 'projects', element: <Projects /> },
+      {
+        index: true,
+        element: (
+          <Wrapper>
+            <Home />
+          </Wrapper>
+        ),
+      },
+      {
+        path: 'about',
+        element: (
+          <Wrapper>
+            <About />
+          </Wrapper>
+        ),
+      },
+      {
+        path: 'skills',
+        element: (
+          <Wrapper>
+            <Skills />
+          </Wrapper>
+        ),
+      },
+      {
+        path: 'qualifications',
+        element: (
+          <Wrapper>
+            <Qualification />
+          </Wrapper>
+        ),
+      },
+      {
+        path: 'achievements',
+        element: (
+          <Wrapper>
+            <Achievements />
+          </Wrapper>
+        ),
+      },
+      {
+        path: 'projects',
+        element: (
+          <Wrapper>
+            <Projects />
+          </Wrapper>
+        ),
+      },
     ],
   },
 ]);
