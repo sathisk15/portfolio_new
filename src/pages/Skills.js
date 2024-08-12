@@ -59,7 +59,7 @@ const Skills = () => {
         <div className="heading w-100">
           <h1>Skills</h1>
         </div>
-        <div className="sections ">
+        <div className="sections px-3">
           <div className="expert">
             <h4>Expert</h4>
             <div className="row">

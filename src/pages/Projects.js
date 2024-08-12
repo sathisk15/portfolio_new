@@ -56,7 +56,7 @@ const Projects = () => {
         <div className="heading w-100">
           <h1>Projects</h1>
         </div>
-        <div className="projectsBody">
+        <div className="projectsBody px-3">
           <div className={`row`}>
             {projects.map((project, idx) => (
               <div className="col-md-3 col-sm-6" key={idx}>

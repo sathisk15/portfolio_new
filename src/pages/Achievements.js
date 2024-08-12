@@ -52,7 +52,6 @@ const Certifications = () => {
     {
       image: networkingFundamentals,
       name: 'Networking Fundamentals',
-      url: '#',
       style: { backgroundPosition: 'center' },
     },
   ];
