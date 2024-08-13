@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import avatar from '../assets/images/hero.avif';
 import Wrapper from '../components/Wrapper';
-import SocialIcons from '../components/SocialIcons';
+import cv from '../assets/cv/Sathiskumar_Resume.pdf';
+
+const SocialIcons = lazy(() => import('../components/SocialIcons'));
 
 const Home = () => {
   const skills = {
@@ -43,6 +45,7 @@ const Home = () => {
       fontWeight: 'bold',
     },
   };
+
   return (
     <Wrapper style={{ marginRight: '0px', marginTop: '0px' }}>
       <div className="home row">
@@ -76,6 +79,12 @@ const Home = () => {
               }
             >
               Let's Connect
+            </button>
+            <button
+              className="connect"
+              onClick={() => window.open(cv, '_blank', 'noopener')}
+            >
+              Get CV
             </button>
           </div>
         </div>
