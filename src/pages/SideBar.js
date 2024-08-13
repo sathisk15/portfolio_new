@@ -34,9 +34,10 @@ const SideBar = () => {
         </button>
       </div>
       <div className="avatar">
-        <img src={avatar} alt="avatar" />
+        <img src={avatar} alt="avatar" draggable={false} />
       </div>
       <h3 className="name">Sathiskumar</h3>
+      <h5 className="role mb-3">React Developer</h5>
       <SocialIcons />
       <div className="options">
         {menus.map((item, idx) => (

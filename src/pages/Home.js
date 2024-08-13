@@ -2,7 +2,7 @@ import React, { lazy } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import avatar from '../assets/images/hero.avif';
 import Wrapper from '../components/Wrapper';
-import cv from '../assets/cv/Sathiskumar_Resume.pdf';
+// import cv from '../assets/cv/Sathiskumar_Resume.pdf';
 
 const SocialIcons = lazy(() => import('../components/SocialIcons'));
 
@@ -10,36 +10,23 @@ const Home = () => {
   const skills = {
     skills: [
       `React Js`,
-      200,
       `Redux`,
-      200,
       `Javascript`,
-      200,
       `HTML`,
-      200,
       `CSS`,
-      200,
       `Testing Library`,
-      200,
       `Jest`,
-      200,
       `Axios`,
-      200,
       `Bootstrap`,
-      200,
       `Node Js`,
-      200,
       `Express Js`,
-      200,
       `MongoDB`,
-      200,
       `CI/CD`,
-      200,
       `Git`,
-      200,
       `GitHub`,
-      200,
-    ],
+    ]
+      .map((skill) => [skill, 200])
+      .flat(),
     style: {
       fontFamily: 'Dancing Script, cursive',
       fontWeight: 'bold',
@@ -80,17 +67,17 @@ const Home = () => {
             >
               Let's Connect
             </button>
-            <button
+            {/* <button
               className="connect"
               onClick={() => window.open(cv, '_blank', 'noopener')}
             >
               Get CV
-            </button>
+            </button> */}
           </div>
         </div>
 
         <div className="col-sm-12 col-md-6 img">
-          <img src={avatar} alt="avatar" />
+          <img src={avatar} alt="avatar" draggable={false} />
         </div>
       </div>
     </Wrapper>
