@@ -29,7 +29,7 @@ const SideBar = () => {
   return (
     <div id="sidebar" className="sidebar">
       <div className="close">
-        <button onClick={close}>
+        <button onClick={close} data-testid="closeSideBar">
           <i className="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -47,6 +47,7 @@ const SideBar = () => {
                 key={idx}
                 onClick={close}
                 className={isActive ? 'active' : ''}
+                data-testid={item.title}
               >
                 <span>
                   <i className={item.icon}></i>
