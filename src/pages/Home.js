@@ -65,7 +65,7 @@ const Home = () => {
                 )
               }
             >
-              Let's Connect
+              Let's Connect via Linkedin
             </button>
             {/* <button
               className="connect"
